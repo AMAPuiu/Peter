@@ -1,0 +1,423 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+#home-body {
+    background: url(Design/home.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#body-about {
+    background: url(Design/about1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0,0,0,0.4);
+}
+.logo img {
+    width: calc((12vh - 5px) * (533px / 377px));
+    height: calc(12vh - 5px);
+
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links a{
+    color: #ffc715;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1em;
+}
+.nav-links li{
+    list-style: none;
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #ffc715;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+.catchy-phrases {
+    color: #ffc715;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: font-size 0.5s;
+}
+#first-phrase {
+    position: absolute;
+    left: 10vw;
+    top: 30vh;
+} 
+#second-phrase {
+    position: absolute;
+    left: 30vw;
+    top: 49vh;
+}
+#third-phrase {
+    position: absolute;
+    left: 65vw;
+    top: 70vh;
+} 
+.rectangle {
+    background-color: rgba(0,0,0,0.4);
+    height: 400px;
+    width: 30%;
+    position: absolute;
+    top: 20vh;
+    left: 35%;
+}
+#register-rectangle {
+    height: 500px;
+}
+.rectangle p {
+    color: rgb(224, 220, 220);
+    font-size: 2em;
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+}
+#error-message {
+    color: rgb(243, 12, 12);
+    font-size: 1em;
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+}
+input[type = submit] {
+    background-color: rgb(7, 114, 7);
+    color: rgb(224, 220, 220);
+    padding: 10px;
+    width: 70%;
+    left: 15%;
+    margin-top: 5%;
+    position: absolute;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+input[type = submit]:hover {
+    background-color: rgb(10, 105, 10);
+}
+input[type = email], input[type = password], input[type = text] {
+    width: 80%;
+    padding: 10px;
+    margin: 5% 10%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.label-name {
+    color:  rgb(224, 220, 220);
+    font-size: 1.4em;
+    margin-left: 10%;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+}
+form {
+    position: relative;
+    padding-top: 2%;
+} 
+.about-rectangle {
+    background-color: rgba(0,0,0,0.4);
+    height: 400px;
+    width: 80%;
+    position: absolute;
+    top: 20vh;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: baseline;
+}
+.about-rectangle p {
+    color: #ffc715;
+    font-size: 10em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    transition: font-size 0.7s;
+}
+.about-rectangle img {
+    width: 30%;
+    height: calc(30% / (533px / 377px));
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.about-container {
+    padding: 64px;
+    position: relative;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+ .about-container img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+
+#body-about-content > div:nth-child(2n+1) {
+    background-color: #fe9801;
+}
+#body-about-content > div:nth-child(2n+0) {
+    background-color: #fde8b6;
+}
+.row > article > p:nth-of-type(1) {
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(255, 0, 0);
+}
+.row > article > p:nth-of-type(2) {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    color: rgb(27,6,94);
+}
+.row > article > ol {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    color: rgb(27,6,94);
+} 
+.row article ol li {
+    padding-top: 5px;
+}
+
+#stat {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(27,6,94);
+    letter-spacing: 2px;
+    border-collapse: collapse;
+    width: 100%;
+}
+#stat td, #stat th {
+    border: 1px solid #ffc715;
+    padding: 8px;
+}
+  
+#stat tr:nth-child(even){
+    background-color: #f1d472;
+}
+  
+#stat tr:hover {
+    background-color: #ffc715;
+}
+  
+#stat th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #fe9801;
+    color: white;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    padding: 0%;
+    position: relative;
+    left: 25%;
+}
+
+.image-item {
+    background-color:#fe9801;
+    border: none;
+    padding: 5%;
+    
+}
+
+#love {
+    position: relative;
+    left: 5px;
+}
+
+.image-item button {
+    background-color:#fe9801;
+    border: none;
+    cursor: pointer;
+}
+#ajax {
+    background-color: #f1d472;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(27,6,94);
+    letter-spacing: 2px;
+    border: none;
+
+}
+#stormtrooper {
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links {
+        width: 60%;
+    }
+    .about-rectangle p{
+        font-size: 8em;
+        transition: font-size 0.7s;
+    }
+}
+@media screen and (max-width: 950px) {
+    .about-rectangle p{
+        font-size: 7em;
+        transition: font-size 0.7s;
+        left: 7%;
+    }
+}
+@media screen and (max-width: 768px){
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 88vh;
+        top: 12vh;
+        background-color: rgba(0,0,0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:0%;
+        transition: 0.5s;
+        z-index: 10;
+    }
+    .nav-links li{
+        opacity: 0; 
+        transition: opacity 0.5s ease-in;
+    } 
+    .burger{
+        display: block;
+    }
+    .rectangle {
+        width: 50%;
+        left: 25%;
+        height: 400px;
+        z-index: 2;
+    }
+    .rectangle p{
+        font-size: 1.5em;
+        padding-top: 10%;
+    }
+    input[type = submit] {
+        height: 15%;
+        width: 70%;
+        left: 15%;
+        margin-top: 5%;
+        font-size: 0.8em;
+        padding-top: 2%;
+    }
+    input[type = email], input[type = password] {
+        height: 15%;
+        width: 80%;
+        margin: 5% 10%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .label-name {
+        color:  rgb(224, 220, 220);
+        font-size: 0.8em;
+        margin-left: 10%;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 3px;
+    }
+    .catchy-phrases {
+        font-size: 0.5em;
+        transition: font-size 0.5s;
+    }
+
+    .about-rectangle p{
+        font-size: 5em;
+        transition: font-size 0.7s;
+    }
+    .about-rectangle img {
+        top: 50%;
+        right: 10%;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .about-rectangle p{
+        font-size: 3em;
+        transition: font-size 0.7s;
+        left: 20%;
+    }
+    .about-rectangle img {
+        top: 50%;
+        right: 20%;
+    }
+}
+
+.nav-active{
+    width: 50%;
+}
+.nav-active li{
+    opacity: 1;
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

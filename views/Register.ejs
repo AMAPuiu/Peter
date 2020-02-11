@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="Style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <script src="Aplication.js"></script>
+    <title>Peter</title>
+</head>
+
+<body id = "home-body">
+    <header>
+        <nav>
+            <div class="logo"><a href = "/"><img src="Design/logo5-mini.png" alt="logo"></a></div>
+            <ul class="nav-links">
+                <li><a href="/about">About</a></li>
+                <li><a href="/login">Sign in</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section class = "rectangle" id = "register-rectangle">
+        <p>Register</p>
+        <div class = "form">
+            <form action = "/register" method="POST">
+                <label class = "label-name" for = "user">User</label>
+                <input type = "text" name = "user"><br>
+                <label class = "label-name" for = "email">Email address</label>
+                <input type = "email" name = "email"><br>
+                <label class = "label-name" for = "password">Password</label>
+                <input type = "password" name = "password" required><br>
+                <input type = "submit" value ="Register">
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
