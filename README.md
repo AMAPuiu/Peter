@@ -16,7 +16,7 @@ University project for Web Techniques course. It is a dating Web Application des
 # Tools
 
 - NodeJs + Express + Passport + Bcrypt (for the server)
-- Javascript
+- Javascript + HTML + CSS
 - eJS (for templates)
 
 # Status
