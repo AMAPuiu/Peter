@@ -1,6 +1,6 @@
 # Peter
 
-University project for Web Techniques course. It is a dating Web Application designed for pets. At the moment it provides a presentation of the application and secure login and registration. 
+A dating Web Application designed for pets. At the moment it provides a presentation of the application and secure login and registration. 
 
 # Features
 
